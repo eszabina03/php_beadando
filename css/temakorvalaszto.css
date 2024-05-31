@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('1.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+h1 {
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.3rem;
+    margin-bottom: 0px;
+    margin-top: 80px;
+}
+
+section {
+    height: auto;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    width: 50%;
+    padding: 0 1em 1em 1em;
+    text-align: center;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    padding: 2em 1.5em;
+    background: linear-gradient(#b382ebd7 50%, #8c31f3 50%);
+    background-size: 100% 200%;
+    background-position: 0 2.5%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #000000;
+    margin: 1em 0;
+}
+
+.icon-wrapper img {
+    height: 50px;
+}
+
+.icon-wrapper {
+    background-color: rgba(182, 65, 206, 0.6);
+    position: relative;
+    margin: auto;
+    font-size: 1.875rem;
+    height: 2.5em;
+    width: 2.5em;
+    color: #ffffff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    transition: 0.5s;
+}
+
+.card:hover {
+    background-position: 0 100%;
+}
+
+.card:hover .icon-wrapper {
+    background-color: rgba(128, 44, 145, 0.6);
+    color: #2c7bfe;
+}
+
+.card:hover h2 {
+    color: #ffffff;
+}
+
+/*Quiz*/
+
+#container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    width: 800px;
+    max-width: 80%;
+    background-color: rgba(182, 65, 206, 1);
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn {
+    --hue: var(--hue-neutral);
+    border: 1px solid rgba(128, 44, 145, 0.6);
+    background-color: rgba(128, 44, 145, 0.6);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+}
+
+.btn:hover {
+    background-color: rgba(128, 44, 145, 0.8);
+}
+
+.btn.correct {
+    border-color: green;
+    background-color: green;
+}
+
+.btn.wrong {
+    border-color: red;
+    background-color: red;
+}
+
+.next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
+
+#question {
+    padding-left: 40px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+/*timer */
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#question {
+    text-align: center;
+    flex: 1;
+}
+
+#countdown-text {
+    fill: white;
+    font-weight: bold;
+}
+
+#message {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.wrongMS {
+    color: rgb(0, 0, 0);
+}
+
+.correctMS {
+    color: rgb(22, 100, 22);
+}
+.wrongMSB {
+    color: red;
+}
+
+.correctMSB {
+    color: white;
+}
+#endmessage{
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+/*code crack*/
+.code {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0px;
+}
+
+.code-cell {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 4px;
+}
+/*submit*/
+.codeEntered{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px 30px 0;
+}
+.correctans{
+    background-color: green;
+}
+.correctwrongplace{
+    background-color: orange;
+}

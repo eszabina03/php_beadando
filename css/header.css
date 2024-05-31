@@ -1,0 +1,72 @@
+header {
+    background-color: rgba(182, 72, 255, 0.63);
+    padding: 20px 15px;
+    text-align: center;
+    margin: 0;
+}
+nav {
+    font-size: 1.2rem;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+nav ul li {
+    margin-right: 3px;
+}
+.vissza {
+    display: inline-flex;
+    margin: 0;
+}
+.vissza a {
+    color: white;
+    text-decoration: none;
+    transition: text-decoration 0.35s ease-in-out;
+}
+.vissza a:hover {
+    text-decoration: underline;
+}
+nav ul li:last-child {
+    margin-right: 0;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: text-decoration 0.35s ease-in-out;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+.size-6 {
+    width: 24px;
+    height: 24px;
+}
+.bejelentkezett{
+    justify-content: space-between;
+}
+.bejelentkezett p{
+    margin: 0;
+    padding: 0;
+}
+.bejelentkezett a{
+    text-decoration: none;
+    color: #DDDDDD;
+    transition: text-decoration 0.35s ease-in-out;
+}
+.bejelentkezett a:hover{
+    text-decoration: underline;
+}
+.felhasznalo {
+    padding: 2px;
+    font-weight: bold;
+    background-color: rgba(255, 192, 203, 0.3);
+    border-radius: 5px;
+}

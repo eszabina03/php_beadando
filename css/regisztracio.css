@@ -1,0 +1,59 @@
+body {
+    background-image: url('1.jpg'); 
+    background-size: cover;         
+    background-position: center center; 
+    background-attachment: fixed; 
+    text-align: center;
+    margin: 0;
+}
+
+h1{
+    color:white;
+    display: block;
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 0.8em auto 2em auto;
+}
+.active{
+    text-decoration: underline;
+}
+form{
+ display: block;
+}
+div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+form label {
+    font-size: 1.5rem;
+    flex-basis: 150px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+form input[type="email"], form input[type="text"], form input[type="password"] {
+    font-size: 1.0rem;
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.regisztracio {
+    height: 30px;
+    background-color: rgb(155, 5, 255);
+    border: 0px;
+    border-radius: 4px;
+    color: white;
+    font-size: 1.1rem;
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+    transition: background-color 0.35s ease-in-out, transform 0.25s ease-in-out;
+}
+
+.regisztracio:hover {
+    transform: scale(1.08);
+}

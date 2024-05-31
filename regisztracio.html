@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regisztráció</title>
+    <link rel="stylesheet" type="text/css" href="css/regisztracio.css">
+    <link rel ="stylesheet" type="text/css" href="css/header.css">
+    <script src="/js/validation.js" defer></script>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="vissza">
+                <a href="index.php">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M6.75 15.75 2 12m0 0 4.75-3.75M2 12h20" />
+                    </svg>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Regisztráció</h1>
+        <form action="regisztral.php" method="post" id="regisztral">
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="felhasznalo">Felhasználónév:</label>
+                <input type="text" id="felhasznalo" name="felhasznalo" required>
+            </div>
+            <div>
+                <label for="jelszo">Jelszó:</label>
+                <input type="password" id="jelszo" name="jelszo" required>
+            </div>
+            <div>
+                <label for="jelszo-megerosit">Jelszó újra:</label>
+                <input type="password" id="jelszo-megerosit" name="jelszo-megerosit" required>
+            </div>
+            <button type="submit" class="regisztracio" id="kuld">Regisztráció</button>
+        </form>
+    </main>
+</body>
+</html>

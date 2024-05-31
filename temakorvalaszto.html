@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game</title>
+  <link rel="stylesheet" href="css/temakorvalaszto.css">
+  <link rel="stylesheet" href="css/header.css">
+</head>
+<header>
+  <nav>
+      <div class="vissza">
+          <a href="index.php">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                  stroke="currentColor" class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M6.75 15.75 2 12m0 0 4.75-3.75M2 12h20" />
+              </svg>
+          </a>
+      </div>
+  </nav>
+</header>
+<body>
+  <section id="tartalom">
+    <div class="row">
+      <h1 class="section-heading">Válassz témakört:</h1>
+    </div>
+    <div class="row">
+      <div class="column" onclick="startGame(1)">
+        <div class="card">
+          <div class="icon-wrapper">
+            <img src="css/general icon.png">
+          </div>
+          <h2>Általános</h2>
+        </div>
+      </div>
+      <div class="column" onclick="startGame(2)">
+        <div class="card">
+          <div class="icon-wrapper">
+            <img src="css/sport icon.png">
+          </div>
+          <h2>Sport</h2>
+        </div>
+      </div>
+      <div class="column" onclick="startGame(3)">
+        <div class="card">
+          <div class="icon-wrapper">
+            <img src="css/literature icon.png">
+          </div>
+          <h2>Irodalom</h2>
+        </div>
+      </div>
+      <div class="column" onclick="startGame(4)">
+        <div class="card">
+          <div class="icon-wrapper">
+            <img src="css/math icon.png">
+          </div>
+          <h2>Matematika</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="hide" id="container">
+    <div id="question-container">
+      <div class="top" id="top">
+        <div id="question">Question</div>
+        <div class="timer" id="countdownElement"></div>
+      </div>
+      <div class="" id="message"></div>
+      <div class="code hide" id="code"></div>
+      <div id="answer-buttons" class="btn-grid"></div>
+      <div class="codeEntered hide" id="codeEntered"></div>
+    </div>
+    <div id="endmessage">
+    </div>
+    <div class="controls">
+      <button id="next-btn" class="next-btn btn hide">Következő</button>
+      <button id="submit-btn" class="next-btn btn hide">Küldés</button>
+      <button id="back-btn" class="next-btn btn hide">Vissza a Főmenűbe</button>
+    </div>
+  </div>
+  <script src="js/temakorvalszto.js"></script>
+
+</body>
+
+</html>
