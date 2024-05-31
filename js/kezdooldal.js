@@ -12,6 +12,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     document.getElementById("github").addEventListener("click", function() {
-        window.open("https://github.com/eszabina03/Quizjatek", "_blank"); 
+        window.open("https://github.com/eszabina03/php_beadando", "_blank"); 
     });
 });
